@@ -1,0 +1,80 @@
+.dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.dashboard button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.dashboard button:hover {
+    background-color: #0056b3;
+}
+
+.flashcard-list {
+    margin-top: 20px;
+}
+
+.flashcard-list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.flashcard-list p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    word-break: break-word;
+}
+
+.flashcard-list button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+}
+
+.flashcard-list button:hover {
+    background-color: #218838;
+}
+
+.flashcard-list button:first-child {
+    background-color: #ffc107;
+}
+
+.flashcard-list button:first-child:hover {
+    background-color: #e0a800;
+}
