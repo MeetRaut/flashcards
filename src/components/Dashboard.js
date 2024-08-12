@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./Dasboard.css"
+import "./Dasboard.css";
 
 const Dashboard = () => {
     const [flashcards, setFlashcards] = useState([]);
@@ -74,10 +74,15 @@ const Dashboard = () => {
 
             <div className="flashcard-list">
                 {flashcards.map((flashcard) => (
-                    <div key={flashcard.id}>
-                        <p>{flashcard.question} - {flashcard.answer}</p>
-                        <button onClick={() => handleEdit(flashcard)}>Edit</button>
-                        <button onClick={() => handleDelete(flashcard.id)}>Delete</button>
+                    <div key={flashcard.id} className="flashcard-item">
+                        <div className="flashcard-content">
+                            <p><strong>Q:</strong> {flashcard.question}</p>
+                            <p><strong>A:</strong> {flashcard.answer}</p>
+                        </div>
+                        <div className="flashcard-actions">
+                            <button onClick={() => handleEdit(flashcard)}>Edit</button>
+                            <button onClick={() => handleDelete(flashcard.id)}>Delete</button>
+                        </div>
                     </div>
                 ))}
             </div>
