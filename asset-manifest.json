@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/flashcards/static/css/main.8d7fffbf.css",
+    "main.js": "/flashcards/static/js/main.d913c9b8.js",
+    "static/js/453.82312ab2.chunk.js": "/flashcards/static/js/453.82312ab2.chunk.js",
+    "service-worker.js": "/flashcards/service-worker.js",
+    "index.html": "/flashcards/index.html",
+    "main.8d7fffbf.css.map": "/flashcards/static/css/main.8d7fffbf.css.map",
+    "main.d913c9b8.js.map": "/flashcards/static/js/main.d913c9b8.js.map",
+    "453.82312ab2.chunk.js.map": "/flashcards/static/js/453.82312ab2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d7fffbf.css",
+    "static/js/main.d913c9b8.js"
+  ]
+}
