@@ -1,5 +1,3 @@
-// FlashcardViewer.js
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Flashcard from './Flashcard';
@@ -11,9 +9,27 @@ const FlashcardViewer = () => {
     const [flipped, setFlipped] = useState(false); // Manage flip state here
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/flashcards')
-            .then(res => setFlashcards(res.data))
-            .catch(err => console.error(err));
+        // Function to fetch flashcards
+        const fetchFlashcards = async () => {
+            try {
+                const response = await axios.get('http://localhost:5000/api/flashcards');
+                console.log('Fetched from server:', response.data); // Debug logging
+                setFlashcards(response.data);
+            } catch (error) {
+                console.error('Failed to fetch from server, falling back to static data.', error);
+                // Fallback static data
+                const fallbackData = [
+                    { id: 1, question: 'What is React?', answer: 'React is a JS library' },
+                    { id: 2, question: 'What is 2 + 2?', answer: 'The summation is 4' },
+                    // Add more static flashcards as needed
+                ];
+                
+                console.log('Using fallback data:', fallbackData); // Debug logging
+                setFlashcards(fallbackData);
+            }
+        };
+
+        fetchFlashcards();
     }, []);
 
     const handleNext = () => {
