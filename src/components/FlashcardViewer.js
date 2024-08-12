@@ -21,7 +21,6 @@ const FlashcardViewer = () => {
                 const fallbackData = [
                     { id: 1, question: 'What is React?', answer: 'React is a JS library' },
                     { id: 2, question: 'What is 2 + 2?', answer: 'The summation is 4' },
-                    // Add more static flashcards as needed
                 ];
                 
                 console.log('Using fallback data:', fallbackData); // Debug logging

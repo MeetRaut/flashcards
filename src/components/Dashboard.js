@@ -22,9 +22,8 @@ const Dashboard = () => {
             console.error('Error fetching flashcards:', err);
             // Use dummy data when API request fails
             const dummyData = [
-                { id: 1, question: 'What is React?', answer: 'React is a JS library.' },
-                { id: 2, question: 'What is 2 + 2?', answer: 'The summation is 4.' },
-                // Add more dummy flashcards as needed
+                { id: 1, question: 'What is React?', answer: 'React is a JS library' },
+                { id: 2, question: 'What is 2 + 2?', answer: 'The summation is 4' },
             ];
             console.log('Using dummy data:', dummyData); // Debug logging
             setFlashcards(dummyData);
