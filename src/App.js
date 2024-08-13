@@ -9,8 +9,8 @@ function App() {
         <Router>
             <Navbar />  {/* Include Navbar here */}
             <Routes>
-                <Route path="/" element={<FlashcardViewer />} />
-                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/flashcards/" element={<FlashcardViewer />} />
+                <Route path="/flashcards/dashboard" element={<Dashboard />} />
             </Routes>
         </Router>
     );
